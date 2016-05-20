@@ -3,7 +3,7 @@
 This is a toy program for testing k-means algorithm
 
 In this program, you can define the dimension of each data point by: 
-  - KMeansTest<DATATYPE, 3> km; // 3-dimension data point
+  - KMeansTest\<DATATYPE, 3\> km; // 3-dimension data point
 
 And define the center number k by:
   - #define K 10
