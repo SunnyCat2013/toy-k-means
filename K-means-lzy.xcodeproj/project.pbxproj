@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		61E935671CE963A800AE9BB6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61E935661CE963A800AE9BB6 /* main.cpp */; };
+		61E9356F1CE963D200AE9BB6 /* KMeansTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 61E9356D1CE963D200AE9BB6 /* KMeansTest.cpp */; };
+		61E935711CE9814900AE9BB6 /* libopencv_highgui.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E935701CE9814900AE9BB6 /* libopencv_highgui.3.1.0.dylib */; };
+		61E935731CE9891D00AE9BB6 /* libopencv_core.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E935721CE9891D00AE9BB6 /* libopencv_core.3.1.0.dylib */; };
+		61E935751CE9894900AE9BB6 /* libopencv_imgproc.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E935741CE9894900AE9BB6 /* libopencv_imgproc.3.1.0.dylib */; };
+		61E935771CE98AAF00AE9BB6 /* libopencv_imgcodecs.3.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E935761CE98AAF00AE9BB6 /* libopencv_imgcodecs.3.1.0.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +28,14 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6190C46E1CEF0D22004AB51A /* Headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Headers.h; sourceTree = "<group>"; };
 		61E935631CE963A800AE9BB6 /* K-means-lzy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "K-means-lzy"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E935661CE963A800AE9BB6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		61E9356D1CE963D200AE9BB6 /* KMeansTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = KMeansTest.cpp; sourceTree = "<group>"; };
+		61E935701CE9814900AE9BB6 /* libopencv_highgui.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.3.1.0.dylib; path = ../../../../usr/local/lib/libopencv_highgui.3.1.0.dylib; sourceTree = "<group>"; };
+		61E935721CE9891D00AE9BB6 /* libopencv_core.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.3.1.0.dylib; path = ../../../../usr/local/lib/libopencv_core.3.1.0.dylib; sourceTree = "<group>"; };
+		61E935741CE9894900AE9BB6 /* libopencv_imgproc.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgproc.3.1.0.dylib; path = ../../../../usr/local/lib/libopencv_imgproc.3.1.0.dylib; sourceTree = "<group>"; };
+		61E935761CE98AAF00AE9BB6 /* libopencv_imgcodecs.3.1.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_imgcodecs.3.1.0.dylib; path = ../../../../usr/local/lib/libopencv_imgcodecs.3.1.0.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +43,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E935731CE9891D00AE9BB6 /* libopencv_core.3.1.0.dylib in Frameworks */,
+				61E935711CE9814900AE9BB6 /* libopencv_highgui.3.1.0.dylib in Frameworks */,
+				61E935771CE98AAF00AE9BB6 /* libopencv_imgcodecs.3.1.0.dylib in Frameworks */,
+				61E935751CE9894900AE9BB6 /* libopencv_imgproc.3.1.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +56,10 @@
 		61E9355A1CE963A800AE9BB6 = {
 			isa = PBXGroup;
 			children = (
+				61E935741CE9894900AE9BB6 /* libopencv_imgproc.3.1.0.dylib */,
+				61E935721CE9891D00AE9BB6 /* libopencv_core.3.1.0.dylib */,
+				61E935761CE98AAF00AE9BB6 /* libopencv_imgcodecs.3.1.0.dylib */,
+				61E935701CE9814900AE9BB6 /* libopencv_highgui.3.1.0.dylib */,
 				61E935651CE963A800AE9BB6 /* K-means-lzy */,
 				61E935641CE963A800AE9BB6 /* Products */,
 			);
@@ -58,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				61E935661CE963A800AE9BB6 /* main.cpp */,
+				6190C46E1CEF0D22004AB51A /* Headers.h */,
+				61E9356D1CE963D200AE9BB6 /* KMeansTest.cpp */,
 			);
 			path = "K-means-lzy";
 			sourceTree = "<group>";
@@ -118,6 +139,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E9356F1CE963D200AE9BB6 /* KMeansTest.cpp in Sources */,
 				61E935671CE963A800AE9BB6 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +229,8 @@
 		61E9356B1CE963A800AE9BB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -214,6 +238,8 @@
 		61E9356C1CE963A800AE9BB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -237,6 +263,7 @@
 				61E9356C1CE963A800AE9BB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
