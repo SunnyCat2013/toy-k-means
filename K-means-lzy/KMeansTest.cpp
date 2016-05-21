@@ -58,9 +58,9 @@ void KMeansTest<T, N>::init_k(vector<vector<T>> points, int k)
         
         for (int i = 0; i < k; i++) {
             int iSecret;
-            /* initialize random seed: */
+            // initialize random seed
             srand (time(0)+i);// use current time as seed for random generator
-            /* generate secret number between 1 and 10: */
+            // generate secret number between 0 and points.size()-1
             iSecret = rand() % points.size();
             centers.push_back(points[iSecret]);
         }
